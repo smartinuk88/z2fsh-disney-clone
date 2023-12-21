@@ -1,3 +1,4 @@
+import CarouselBannerWrapper from "@/components/CarouselBannerWrapper";
 import MoviesCarousel from "@/components/MoviesCarousel";
 import {
   getPopularMovies,
@@ -12,6 +13,7 @@ export default async function Home() {
 
   return (
     <main>
+      <CarouselBannerWrapper />
       <div className="flex flex-col space-y-2">
         <MoviesCarousel title="Upcoming" movies={upcomingMovies} />
         <MoviesCarousel title="Top Rated" movies={topRatedMovies} />
